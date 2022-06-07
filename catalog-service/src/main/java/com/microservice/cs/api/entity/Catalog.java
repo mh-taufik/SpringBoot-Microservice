@@ -1,4 +1,4 @@
-package com.microservice.os.api.entity;
+package com.microservice.cs.api.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,15 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ORDER_ID")
+@Table(name = "CATALOG_ID")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class Catalog {
     @Id
-    private int id;
-//    private String name;
-    private int qty;
-//    private double price;
     private int catalogId;
+    private String name;
+    private double price;
+//    private int stock;
 }

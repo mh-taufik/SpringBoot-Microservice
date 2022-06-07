@@ -1,6 +1,5 @@
 package com.microservice.os.api.common;
 
-import com.microservice.os.api.entity.Order;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TransactionRequest {
-    private Order order;
-    private Payment payment;
-
+public class Catalog {
+    private int catalogId;
+    private String name;
+    private double price;
 }
